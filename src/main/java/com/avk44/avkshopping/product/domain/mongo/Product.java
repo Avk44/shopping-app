@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.List;
+
 
 @Document(collation = "product")
 @Getter
@@ -18,6 +20,7 @@ public class Product {
   private String companyId;
   private String features;
   private String categoryId;
+  private List<ProductImage> imageList;
   private Boolean active;
 
 }
