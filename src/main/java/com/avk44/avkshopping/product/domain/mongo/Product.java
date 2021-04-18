@@ -1,11 +1,10 @@
-package com.avk44.avkshopping.product.domain;
+package com.avk44.avkshopping.product.domain.mongo;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.math.BigDecimal;
 
 @Document(collation = "product")
 @Getter
@@ -18,7 +17,6 @@ public class Product {
   private String description;
   private String companyId;
   private String features;
-  private BigDecimal price;
   private String categoryId;
   private Boolean active;
 

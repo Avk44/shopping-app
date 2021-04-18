@@ -1,4 +1,4 @@
-package com.avk44.avkshopping.product.domain;
+package com.avk44.avkshopping.product.domain.mongo;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
