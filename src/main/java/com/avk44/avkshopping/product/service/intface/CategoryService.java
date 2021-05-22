@@ -1,4 +1,4 @@
-package com.avk44.avkshopping.product.service;
+package com.avk44.avkshopping.product.service.intface;
 
 import com.avk44.avkshopping.product.domain.category.Category;
 import com.avk44.avkshopping.product.model.category.CategoryResponse;

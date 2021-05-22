@@ -1,16 +1,25 @@
 package com.avk44.avkshopping.product.service.impl;
 
+import com.avk44.avkshopping.product.domain.es.ProductEs;
+import com.avk44.avkshopping.product.domain.mongo.MoneyTypes;
 import com.avk44.avkshopping.product.domain.mongo.Product;
 import com.avk44.avkshopping.product.domain.mongo.ProductImage;
-import com.avk44.avkshopping.product.model.ProductResponse;
+import com.avk44.avkshopping.product.model.product.ProductDetailResponse;
+import com.avk44.avkshopping.product.model.product.ProductResponse;
+import com.avk44.avkshopping.product.model.product.ProductSaveRequest;
+import com.avk44.avkshopping.product.model.product.ProductSellerResponse;
 import com.avk44.avkshopping.product.repository.mongo.ProductRepository;
-import com.avk44.avkshopping.product.service.ProductService;
+import com.avk44.avkshopping.product.service.intface.ProductAmountService;
+import com.avk44.avkshopping.product.service.intface.ProductDeliveryService;
+import com.avk44.avkshopping.product.service.intface.ProductEsService;
+import com.avk44.avkshopping.product.service.intface.ProductService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 import static com.avk44.avkshopping.product.domain.mongo.ImageType.FEATURE;
+import static java.util.stream.Collectors.toList;
 
 @Service
 @RequiredArgsConstructor

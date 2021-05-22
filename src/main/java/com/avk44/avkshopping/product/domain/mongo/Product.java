@@ -1,18 +1,25 @@
 package com.avk44.avkshopping.product.domain.mongo;
 
+import lombok.Builder;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.math.BigDecimal;
+import java.util.HashMap;
 import java.util.List;
 
 
 @Document(collation = "product")
 @Getter
 @Setter
+@Builder
 @EqualsAndHashCode(of = "id")
 public class Product {
+
+  @Id
   private String id;
   private String name;
   private String code;
@@ -20,7 +27,8 @@ public class Product {
   private String companyId;
   private String features;
   private String categoryId;
-  private List<ProductImage> imageList;
+  private List<ProductImage> productImage;
+  private HashMap<MoneyTypes, BigDecimal> price;
   private Boolean active;
 
 }

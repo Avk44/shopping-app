@@ -4,7 +4,7 @@ import com.avk44.avkshopping.product.domain.category.Category;
 import com.avk44.avkshopping.product.model.category.CategoryResponse;
 import com.avk44.avkshopping.product.model.category.CategorySaveRequest;
 import com.avk44.avkshopping.product.repository.mongo.CategoryRepository;
-import com.avk44.avkshopping.product.service.CategoryService;
+import com.avk44.avkshopping.product.service.intface.CategoryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;

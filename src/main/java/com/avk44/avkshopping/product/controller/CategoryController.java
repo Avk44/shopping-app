@@ -2,7 +2,7 @@ package com.avk44.avkshopping.product.controller;
 
 
 import com.avk44.avkshopping.product.model.category.CategoryResponse;
-import com.avk44.avkshopping.product.service.CategoryService;
+import com.avk44.avkshopping.product.service.intface.CategoryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;

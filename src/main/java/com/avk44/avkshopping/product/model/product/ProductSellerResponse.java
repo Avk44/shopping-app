@@ -1,12 +1,12 @@
-package com.avk44.avkshopping.product.domain.es;
+package com.avk44.avkshopping.product.model.product;
+
 
 import lombok.Builder;
 import lombok.Data;
 
 @Data
 @Builder
-public class CompanyEs {
+public class ProductSellerResponse {
   private String id;
   private String name;
-  private String code;
 }
